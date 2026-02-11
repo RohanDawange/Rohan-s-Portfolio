@@ -536,6 +536,80 @@ body {
     color: var(--primary-color);
 }
 
+ /* =============================
+   Certificates Section
+============================= */
+
+.certificates-section {
+    padding: 90px 8%;
+    background: var(--darker-bg);
+    text-align: center;
+}
+
+/* Title */
+.certificates-section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+}
+
+
+/* ===== Grid Layout (better than flex) ===== */
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+
+/* ===== Card ===== */
+.certificate-card {
+    background: var(--card-bg);
+    padding: 28px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: 0.35s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Hover Effect */
+.certificate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(99,102,241,0.25);
+}
+
+
+/* Text */
+.certificate-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.certificate-card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin: 3px 0;
+}
+
+
+/* ===== Button ===== */
+.cert-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cert-btn:hover {
+    background: #4f46e5;
+    transform: scale(1.05);
+}
+
+
 /* Education Section */
 .education {
     background: var(--darker-bg);
