@@ -271,13 +271,6 @@ body {
     animation: bounce 2s infinite;
 }
 
-.mouse {
-    width: 30px;
-    height: 50px;
-    border: 2px solid var(--primary-color);
-    border-radius: 20px;
-    position: relative;
-}
 
 .mouse::before {
     content: '';
